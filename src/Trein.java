@@ -7,17 +7,26 @@ import java.util.LinkedHashMap;
 public class Trein {
 
     private TreinConducteur conducteur;
-    private Hashmap<String, Nameable> stoelen = new LinkedHashMap<String, Nameable>();
+    private HashMap<String, Nameable> stoelen = new LinkedHashMap<String, Nameable>();
 
     public Trein(TreinConducteur conducteur) {
 
         this.conducteur = conducteur;
     }
 
-    public void instappen(Nameable nameable1, Nameable nameable2, Nameable nameable3) {
+    public void instappen(Nameable nameable1, Nameable nameable2, Nameable nameable3, Nameable nameable4, Nameable nameable5, Nameable nameable6, Nameable nameable7){
         instappen(nameable1);
         instappen(nameable2);
         instappen(nameable3);
+        instappen(nameable4);
+        instappen(nameable5);
+        instappen(nameable6);
+        instappen(nameable7);
+    }
+
+    public void instappen (Nameable nameable8, Nameable nameable9) {
+        instappen(nameable8);
+        instappen(nameable9);
     }
 
     public void instappen(Nameable nameable) {

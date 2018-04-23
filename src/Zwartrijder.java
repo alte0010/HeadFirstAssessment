@@ -1,4 +1,6 @@
-package PACKAGE_NAME;
+public class Zwartrijder extends Passagier {
 
-public class Zwartrijder {
+    public Zwartrijder(String name) {
+        super(name);
+    }
 }
