@@ -1,5 +1,3 @@
-import javax.naming.Name;
-import java.util.Dictionary;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.LinkedHashMap;
@@ -45,6 +43,7 @@ public class Trein {
         return stoelen.size();
     }
 
+
     public Nameable uitstappen(String name) {
 
         if (!stoelen.containsKey(name)) {
@@ -55,6 +54,14 @@ public class Trein {
         stoelen.remove(name);
         showInfo(uitgestapte, " is uitgestapt.");
         return uitgestapte;
+    }
+
+    public Nameable uitgooien(String name) {
+
+        Nameable uitgegooide = stoelen.get(name);
+        stoelen.remove(name);
+        showInfo(uitgegooide, " is uit de trein gegooid.");
+        return uitgegooide;
     }
 
     public String[] getNames() {

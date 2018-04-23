@@ -23,8 +23,8 @@ public class Main {
         trein.instappen(Bas, Raphael);
         System.out.println(trein);
 
-        //treinstation treinspoor Arnemuiden-Middelburg
-        Zwartrijder uitgestapte = (Zwartrijder) trein.uitstappen("Zwartrijdende Joery");
+        //treinspoor Arnemuiden-Middelburg
+        Zwartrijder uitgegooide = (Zwartrijder) trein.uitgooien("Zwartrijdende Joery");
         System.out.println(trein);
 
         //treinstation Middelburg
@@ -33,25 +33,22 @@ public class Main {
         System.out.println(trein);
 
         //treinstation Oost-Souburg Vlissingen
-
+        TreinreizigerKlas2 uitstappen = (TreinreizigerKlas2) trein.uitstappen ("Bas");
+        TreinreizigerKlas2 uitstappen2 = (TreinreizigerKlas2) trein.uitstappen ("Raphael");
         System.out.println(trein);
 
         //treinstation Vlissingen
-
-        System.out.println(trein);
-
-        //controle
-        Zwartrijder Joery = (Zwartrijder) trein.uitstappen(" Zwartrijdende Joery");
+        TreinreizigerKlas2 uitstappen3 = (TreinreizigerKlas2) trein.uitstappen ("Kwik");
+        TreinreizigerKlas2 uitstappen4 = (TreinreizigerKlas2) trein.uitstappen ("Kwek");
+        TreinreizigerKlas2 uitstappen5 = (TreinreizigerKlas2) trein.uitstappen ("Kwak");
+        TreinreizigerKlas2 uitstappen6 = (TreinreizigerKlas2) trein.uitstappen ("Kwuk");
+        TreinreizigerKlas2 uitstappen7 = (TreinreizigerKlas2) trein.uitstappen ("Kwok");
+        TreinreizigerKlas1 uitstappen8 = (TreinreizigerKlas1) trein.uitstappen ("Jesper");
+        TreinreizigerKlas1 uitstappen9 = (TreinreizigerKlas1) trein.uitstappen ("Shawn");
         System.out.println(trein);
 
         //Wie zit er in de bus?
         trein.printNames();
 
-
-        TreinStation goes = new TreinStation();
-        goes.rijdtBinnen(trein);
-
-        trein.info();
-        trein.printNames();
     }
 }
